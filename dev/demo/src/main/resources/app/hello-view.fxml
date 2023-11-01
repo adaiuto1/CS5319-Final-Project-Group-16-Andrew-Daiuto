@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.layout.HBox?>
+<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="app.InterfaceController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+    </padding>
+    <HBox spacing="10">
+        <Text fx:id="accuracy" style="-fx-font-size: 20px"/>
+        <Text fx:id="timer" style="-fx-font-size: 20px"/>
+        <Text fx:id="speed" style="-fx-font-size: 20px"/>
+    </HBox>
+    <Text fx:id="completionMessage" style="-fx-font-size: 20px"/>
+
+    <Text fx:id="displayText" style="-fx-max-width: 50%; -fx-font-size: 18px" wrappingWidth="300"/>
+    <Text fx:id="currWord" style="-fx-font-size: 16px"/>
+    <Text fx:id="userText" style="-fx-max-width:  80%; -fx-font-size: 14px"/>
+    <Button text="Begin Test" fx:id="loadPromptButton" onAction="#beginTest"/>
+    <TextField fx:id="textField"/>
+
+</VBox>
+

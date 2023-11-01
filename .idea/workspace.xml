@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="925c0241-0214-448b-b328-a899f1828714" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../5343/TaskScheduler3/book.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../5343/TaskScheduler3/rr-schedule.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../5343/TaskScheduler3/run.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../5343/TaskScheduler3/schedule.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../5343/TaskScheduler3/src/book.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../5343/TaskScheduler3/src/rr-schedule.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../5343/TaskScheduler3/src/run.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../5343/TaskScheduler3/src/schedule.txt" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="workspaceImportEnabled" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="2" />
+  </component>
+  <component name="ProjectId" id="2XB1kqFu0G5mM76z4W5IqLSrTlB" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="925c0241-0214-448b-b328-a899f1828714" name="Changes" comment="" />
+      <created>1698087807176</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1698087807176</updated>
+      <workItem from="1698087808384" duration="88000" />
+    </task>
+    <servers />
+  </component>
+</project>
