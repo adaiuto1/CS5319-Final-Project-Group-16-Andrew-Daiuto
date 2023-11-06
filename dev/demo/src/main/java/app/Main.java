@@ -37,6 +37,7 @@ public class Main extends Application {
         eventBus.subscribe(accuracyCheck, new KeyPress());
         eventBus.subscribe(accuracyCheck, new NewWord());
         eventBus.subscribe(accuracyCheck, new NewTick());
+
         FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("hello-view.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 700, 500);
 

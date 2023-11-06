@@ -5,6 +5,7 @@ import app.Main;
 import event.*;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.event.ActionEvent;
@@ -48,7 +49,12 @@ public class DisplayPanel implements EventHandler{
     public Text accuracy;
     @FXML
     public Text currWord;
-    public DisplayPanel(HashMap<String, Text> sceneTexts){
+    @FXML
+    public TextField textField;
+    @FXML
+    public Button loadPromptButton;
+    public DisplayPanel(HashMap<String, Text> sceneTexts, TextField textField, Button loadPromptButton){
+        System.out.println(sceneTexts);
         this.displayText = sceneTexts.get("displayText");
         this.userText = sceneTexts.get("userText");
         this.timer = sceneTexts.get("timer");
@@ -56,6 +62,8 @@ public class DisplayPanel implements EventHandler{
         this.completionMessage = sceneTexts.get("completionMessage");
         this.accuracy = sceneTexts.get("accuracy");
         this.currWord = sceneTexts.get("currWord");
+        this.textField = textField;
+        this.loadPromptButton = loadPromptButton;
     }
     public void receiveEvent(EventBus eventBus, Event event) {
 //        System.out.println("DisplayPanel Received");
@@ -64,6 +72,7 @@ public class DisplayPanel implements EventHandler{
             displayText.setText(((NewPromptLoaded) event).getPrompt());
             promptWords = new ArrayList<String>(List.of(((NewPromptLoaded) event).getPrompt().split(" ")));
             currWord.setText(promptWords.get(0));
+            loadPromptButton.setDisable(true);
         }
         //RECEIVE NEW KEYSTROKE
         else if (event.getClass() == KeyPress.class) {
@@ -84,6 +93,7 @@ public class DisplayPanel implements EventHandler{
         else if(event.getClass() == TestComplete.class){
             completionMessage.setText("Test Complete!");
             displayText.setText("");
+            textField.setDisable(true);
         }
         //UPDATE DISPLAY BETWEEN WORDS
         else if(event.getClass() == NewWord.class){

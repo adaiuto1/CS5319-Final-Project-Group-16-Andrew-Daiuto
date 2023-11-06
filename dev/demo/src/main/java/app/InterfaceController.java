@@ -55,7 +55,7 @@ public class InterfaceController {
         sceneTexts.put("completionMessage", completionMessage);
         sceneTexts.put("accuracy", accuracy);
         sceneTexts.put("currWord", currWord);
-        displayPanel = new DisplayPanel(sceneTexts);
+        displayPanel = new DisplayPanel(sceneTexts, textField, loadPromptButton);
 
         eventBus.subscribe(displayPanel, new NewPromptLoaded());
         eventBus.subscribe(displayPanel, new KeyPress());
@@ -84,8 +84,8 @@ public class InterfaceController {
                 }catch (IllegalArgumentException e){
 
                 }
-
             }
         });
     }
+
 }
